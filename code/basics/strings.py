@@ -32,6 +32,12 @@ print(f"your has {len(name)} characters!")
 print(f"Uppercase: {name.upper()}")
 print(f"Lowercase: {name.lower()}")
 
+x: str | int | None = None
+x = ""
+
+y: int | None = None
+y = 1
+
 
 # check if name has whitespace
 if " " in name:
