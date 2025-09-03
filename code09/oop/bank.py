@@ -22,14 +22,11 @@ class BankAccount:
 
 
 bank = BankAccount("N26")
-
 bank.show_balance()
 
 bank.deposit(1000)
-
 bank.withdraw(200)
-
-bank.__balance = 1000
+bank.__balance = 10e6
 
 # bank._BankAccount__balance = 10000
 

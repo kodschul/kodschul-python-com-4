@@ -9,3 +9,11 @@ def create_person2(dict_person: dict):
 
 output1 = create_person(name="abc", alter=12, beruf="abcd")
 output2 = create_person2(name="abc", alter=12, beruf="abcd")
+
+
+person3 = {
+    'name': "abc",
+    "alter": 14,
+    'beruf': "abc"
+}
+output2 = create_person2(name="abc", alter=12, beruf="abcd")

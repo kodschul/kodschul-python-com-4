@@ -1,22 +1,57 @@
-# class Animal:
+class Animal:
 
-#     def __init__(self, name, age):
-#         print(f"A new animal was born, {name} ")
-#         self.name = name
-#         self.age = age
+    name: str
+    age: int
 
-#     def greet(self):
-#         print(f"Hi {self.name}, you're {self.age} y/o")
+    family = "Mammals"
+
+    def __init__(self, name, age: int):
+        print(f"A new animal was born, {name} ")
+        self.name = name
+        self.age = age
+        self.__secret = "secret_name"
+        self._protected_name = "protected_name"
+
+    def greet(self):
+        print(f"Hi {self.name}, you're {self.age} y/o")
+
+    def show_secret(self):
+        return self.__secret
+
+    def show_protected_name(self):
+        return self._protected_name
 
 
-# print("Animal class")
+class Hund(Animal):
+
+    def greet(self):
+        super().greet()
+        print("wuff")
+
+
+hund = Hund("Bello", 5)
+
+# hund._protected_name = "ABCD"
+# hund.__secret = "ABC"
+
+print(hund._Animal__secret)
+# hund.greet()
+
+exit()
 
 # dog = Animal("dog", 5)
+# dog.family = "Dog_Family"
 # cat = Animal("cat", 3)
 
-# dog.greet()
-# cat.greet()
+# Animal.family = "Fake"
+# print("Animal class", dog.family, cat.family)
 
+
+exit()
+dog.greet()
+cat.greet()
+
+exit()
 # # ----- car
 
 

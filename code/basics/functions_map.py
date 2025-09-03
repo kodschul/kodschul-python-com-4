@@ -5,6 +5,17 @@ persons = [{"name": "Fritz", "age": 18}, {
     "name": "Paul", "age": 15},  {"name": "Marie", "age": 40}]
 
 
+def sort_person_key(person):
+    return person['age']
+
+
+sorted_persons = sorted(persons, key=sort_person_key)
+
+sorted_persons = sorted(persons, key=lambda person: person['age'])
+print(sorted_persons)
+exit()
+
+
 names = map(lambda person: person.get("name"), persons)
 adults = filter(lambda person: person['age'] >= 18, persons)
 
