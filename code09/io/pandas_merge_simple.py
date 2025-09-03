@@ -14,6 +14,5 @@ order_df = pd.DataFrame({
 print(customer_df)
 print(order_df)
 
-
 customer_order_df = pd.merge(customer_df, order_df, on="KundenID")
 print(customer_order_df)

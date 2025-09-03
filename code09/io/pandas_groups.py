@@ -10,11 +10,7 @@ df = pd.DataFrame({
 df_grouped = df.groupby(["Stadt", "Bezirk"]).sum()
 print(df_grouped)
 
-exit()
-
-print(df)
 df_agg_sum = df.groupby("Stadt").sum()
-
 
 df_agg_mean = df.groupby("Stadt").mean()
 
