@@ -1,18 +1,17 @@
 import numpy as np
 
 
-
 n1 = np.array([1,2,3,4])
 n2 = np.array([5,6,7,8])
 
-n3 = n1 + n2 
+n3 = n1  + n2
 
 nx = np.concatenate([n1, n2])
 print(nx)
 
-exit()
 
 arr = np.array([1,2,3,4])
+# arr = np.array([1,1,1,1])
 
 print("mean: ", np.mean(arr))
 print("median: ", np.median(arr))
